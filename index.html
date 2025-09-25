@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IDAMSA | Mantenimiento, Reparación y Venta de Equipos de Laboratorio</title>
+  <meta name="description" content="Servicios especializados de mantenimiento preventivo y correctivo, reparación y venta de equipos y suministros de laboratorio clínico en México." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef7fb',
+              100: '#d7ecf6',
+              200: '#a9d7ec',
+              300: '#7dc3e2',
+              400: '#51aed8',
+              500: '#2C9BCE', // azul marca sugerido
+              600: '#1f7faf',
+              700: '#17668f',
+              800: '#104c6d',
+              900: '#0b3650'
+            },
+            accent: '#2cb67d'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="IDAMSA | Servicios para Equipos de Laboratorio" />
+  <meta property="og:description" content="Mantenimiento preventivo, reparación y venta de equipos de laboratorio clínico." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+
+  <!-- LocalBusiness JSON-LD (ajusta dirección cuando la confirmes) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IDAMSA - Servicios de Laboratorio",
+    "url": "https://tusitio.mx/",
+    "logo": "https://tusitio.mx/logo.png",
+    "image": "https://tusitio.mx/hero.jpg",
+    "description": "Mantenimiento preventivo y correctivo, reparación y venta de equipos de laboratorio clínico.",
+    "telephone": "+52 8124443723",
+    "areaServed": "México",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MX"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* Suave blur de fondo en navegación sticky */
+    .glass { backdrop-filter: saturate(180%) blur(10px); }
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Navbar -->
+  <header class="fixed top-0 inset-x-0 z-50 glass bg-white/70 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#inicio" class="flex items-center gap-2 font-semibold text-brand-800">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500 text-white">ID</span>
+          <span class="text-lg">IDAMSA</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#servicios" class="hover:text-brand-700">Servicios</a>
+          <a href="#equipos" class="hover:text-brand-700">Equipos</a>
+          <a href="#proceso" class="hover:text-brand-700">Cómo trabajamos</a>
+          <a href="#faq" class="hover:text-brand-700">FAQ</a>
+          <a href="#contacto" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Cotizar</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="pt-28 bg-gradient-to-b from-brand-900 via-brand-800 to-brand-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Soluciones integrales en equipos de laboratorio
+          </h1>
+          <p class="mt-4 text-lg text-brand-100">
+            Mantenimiento preventivo y correctivo, reparación y venta de equipos y suministros para laboratorios de análisis clínicos.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contacto" class="px-6 py-3 rounded-xl bg-accent text-white font-medium hover:opacity-90">Solicitar cotización</a>
+            <a href="https://wa.me/528124443723?text=Hola%20IDAMSA,%20necesito%20soporte%20para%20mi%20equipo%20de%20laboratorio" target="_blank" class="px-6 py-3 rounded-xl border border-white/30 hover:border-white/60">WhatsApp</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-sm text-brand-100">
+            <div class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Confiabilidad</div>
+            <div class="flex items-center gap-2"><i data-lucide="badge-check" class="w-4 h-4"></i> Calidad</div>
+            <div class="flex items-center gap-2"><i data-lucide="clock-8" class="w-4 h-4"></i> Continuidad operativa</div>
+          </div>
+        </div>
+        <div>
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 bg-white">
+            <!-- Reemplaza este SVG por una foto de laboratorio cuando la tengas -->
+            <svg viewBox="0 0 600 400" class="w-full h-full" role="img" aria-label="Laboratorio">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#e8f3fb" />
+                  <stop offset="100%" stop-color="#d2ecf7" />
+                </linearGradient>
+              </defs>
+              <rect width="600" height="400" fill="url(#g)" />
+              <g fill="#2C9BCE">
+                <circle cx="480" cy="120" r="40" opacity="0.15" />
+                <circle cx="100" cy="300" r="70" opacity="0.15" />
+                <rect x="150" y="220" width="120" height="140" rx="16" opacity="0.25" />
+                <rect x="310" y="180" width="160" height="180" rx="16" opacity="0.25" />
+              </g>
+              <text x="40" y="60" fill="#0b3650" font-size="24" font-weight="700">IDAMSA</text>
+              <text x="40" y="90" fill="#17668f" font-size="16">Servicios para equipos de laboratorio</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="p-6 rounded-2xl border border-slate-200">
+        <i data-lucide="settings" class="mx-auto w-6 h-6 text-brand-700"></i>
+        <h3 class="mt-2 font-semibold">Mantenimiento preventivo</h3>
+        <p class="text-sm text-slate-600 mt-1">Planes basados en manuales del fabricante, calibraciones de rutina y listas de verificación.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200">
+        <i data-lucide="wrench" class="mx-auto w-6 h-6 text-brand-700"></i>
+        <h3 class="mt-2 font-semibold">Reparación y correctivo</h3>
+        <p class="text-sm text-slate-600 mt-1">Diagnóstico, cambio de refacciones y pruebas funcionales con simuladores.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200">
+        <i data-lucide="shopping-cart" class="mx-auto w-6 h-6 text-brand-700"></i>
+        <h3 class="mt-2 font-semibold">Venta de equipos</h3>
+        <p class="text-sm text-slate-600 mt-1">Asesoría para selección, instalación y puesta en marcha de equipos clínicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl font-bold text-brand-900">Servicios</h2>
+          <p class="mt-3 text-slate-700">Diseñamos planes a la medida para minimizar el tiempo fuera de servicio y extender la vida útil de tus equipos.</p>
+        </div>
+        <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-slate-200">
+            <div class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-accent"></i><h3 class="font-semibold">Planes de PM</h3></div>
+            <ul class="mt-2 space-y-2 text-sm list-disc pl-5 text-slate-700">
+              <li>Checklists por modelo del fabricante</li>
+              <li>Calibración y verificación funcional</li>
+              <li>Bitácoras y reportes PDF</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200">
+            <div class="flex items-center gap-3"><i data-lucide="cpu" class="w-5 h-5 text-accent"></i><h3 class="font-semibold">Reparación</h3></div>
+            <ul class="mt-2 space-y-2 text-sm list-disc pl-5 text-slate-700">
+              <li>Diagnóstico electrónico y mecánico</li>
+              <li>Refacciones y validación post-servicio</li>
+              <li>Soporte remoto y en sitio</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200">
+            <div class="flex items-center gap-3"><i data-lucide="stethoscope" class="w-5 h-5 text-accent"></i><h3 class="font-semibold">Calibraciones con simuladores</h3></div>
+            <ul class="mt-2 space-y-2 text-sm list-disc pl-5 text-slate-700">
+              <li>NIBP, SpO₂, ECG, temperatura, presión</li>
+              <li>Protocolos de verificación funcional</li>
+              <li>Certificados de prueba</li>
+            </ul>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-slate-200">
+            <div class="flex items-center gap-3"><i data-lucide="file-text" class="w-5 h-5 text-accent"></i><h3 class="font-semibold">Documentación</h3></div>
+            <ul class="mt-2 space-y-2 text-sm list-disc pl-5 text-slate-700">
+              <li>Reportes de servicio y evidencias</li>
+              <li>Checklists digitales y trazabilidad</li>
+              <li>Asesoría normativa básica</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipos -->
+  <section id="equipos" class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl font-bold text-brand-900">Equipos relacionados</h2>
+          <p class="mt-3 text-slate-700">Soportamos distintas marcas y modelos. Pregunta por tu equipo específico.</p>
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Analizadores de hematología</li>
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Analizadores de inmunología</li>
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Analizadores químicos (orina y suero)</li>
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Centrífugas y microscopios</li>
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Refrigeración y incubadoras</li>
+            <li class="flex items-center gap-2"><i data-lucide="dot" class="w-4 h-4"></i> Baños maría, agitadores, balanzas</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h3 class="font-semibold">Marcas con las que trabajamos</h3>
+          <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-slate-700">
+            <span class="px-3 py-2 rounded-lg bg-white border">Abbott</span>
+            <span class="px-3 py-2 rounded-lg bg-white border">Siemens</span>
+            <span class="px-3 py-2 rounded-lg bg-white border">Beckman</span>
+            <span class="px-3 py-2 rounded-lg bg-white border">Mindray</span>
+            <span class="px-3 py-2 rounded-lg bg-white border">Dirui</span>
+            <span class="px-3 py-2 rounded-lg bg-white border">Thermo</span>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">*Los logotipos son propiedad de sus titulares. Servicio multimarca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section id="proceso" class="bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold text-brand-900">Cómo trabajamos</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="flex items-center gap-2"><span class="text-xs font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800">1</span><h3 class="font-semibold">Diagnóstico</h3></div>
+          <p class="mt-2 text-sm text-slate-700">Revisión inicial, lectura de errores y pruebas funcionales.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="flex items-center gap-2"><span class="text-xs font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800">2</span><h3 class="font-semibold">Propuesta</h3></div>
+          <p class="mt-2 text-sm text-slate-700">Alcance, tiempos y cotización transparentes.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="flex items-center gap-2"><span class="text-xs font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800">3</span><h3 class="font-semibold">Ejecución</h3></div>
+          <p class="mt-2 text-sm text-slate-700">Mantenimiento/reparación con refacciones y simuladores.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="flex items-center gap-2"><span class="text-xs font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800">4</span><h3 class="font-semibold">Entrega</h3></div>
+          <p class="mt-2 text-sm text-slate-700">Reporte, evidencias y recomendaciones para operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-brand-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl font-bold">¿Necesitas soporte para tu equipo?</h3>
+        <p class="text-brand-100">Respondemos el mismo día hábil.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="#contacto" class="px-5 py-3 rounded-xl bg-accent text-white">Solicitar cotización</a>
+        <a href="mailto:idamsamx@outlook.com" class="px-5 py-3 rounded-xl border border-white/30 hover:border-white/60">Escríbenos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-3xl font-bold text-brand-900">Preguntas frecuentes</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="p-5 border rounded-xl open:bg-slate-50">
+          <summary class="font-medium cursor-pointer">¿Trabajan en todo México?</summary>
+          <p class="mt-2 text-sm text-slate-700">Atendemos de forma remota y en sitio en principales ciudades. Pregunta por disponibilidad en tu ubicación.</p>
+        </details>
+        <details class="p-5 border rounded-xl">
+          <summary class="font-medium cursor-pointer">¿Entregan reportes y evidencias?</summary>
+          <p class="mt-2 text-sm text-slate-700">Sí, entregamos checklist, resultados de prueba y recomendaciones posteriores al servicio.</p>
+        </details>
+        <details class="p-5 border rounded-xl">
+          <summary class="font-medium cursor-pointer">¿Atienden multimarca?</summary>
+          <p class="mt-2 text-sm text-slate-700">Sí, trabajamos con diferentes marcas y modelos; consúltanos tu equipo específico.</p>
+        </details>
+        <details class="p-5 border rounded-xl">
+          <summary class="font-medium cursor-pointer">¿Tiempos de respuesta?</summary>
+          <p class="mt-2 text-sm text-slate-700">Para urgencias buscamos atender el mismo día hábil o al siguiente, según ciudad y disponibilidad.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl font-bold text-brand-900">Contacto</h2>
+          <p class="mt-3 text-slate-700">Cuéntanos qué equipo necesitas revisar y tu ubicación. Te responderemos con una propuesta.</p>
+          <div class="mt-6 space-y-2 text-slate-700 text-sm">
+            <div class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-brand-700"></i> <a href="tel:+528124443723" class="hover:underline">+52 812 444 3723</a></div>
+            <div class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-brand-700"></i> <a href="mailto:idamsamx@outlook.com" class="hover:underline">idamsamx@outlook.com</a></div>
+            <div class="flex items-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-brand-700"></i> <a target="_blank" class="hover:underline" href="https://wa.me/528124443723?text=Hola%20IDAMSA,%20quiero%20cotizar%20mantenimiento/reparación%20de%20mi%20equipo">WhatsApp directo</a></div>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200">
+          <form action="https://formspree.io/f/your-id" method="POST" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium">Nombre</label>
+              <input required name="nombre" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium">Correo</label>
+                <input required type="email" name="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Teléfono</label>
+                <input name="telefono" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Equipo / Marca / Modelo</label>
+              <input name="equipo" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Mensaje</label>
+              <textarea required name="mensaje" rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500"></textarea>
+            </div>
+            <button class="w-full px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Enviar</button>
+            <p class="text-xs text-slate-500">*Al enviar aceptas ser contactado para dar seguimiento a tu solicitud.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+      <div class="flex items-center gap-2"><span class="font-semibold text-brand-800">IDAMSA</span> · Servicios para equipos de laboratorio</div>
+      <div class="flex items-center gap-4">
+        <a href="mailto:idamsamx@outlook.com" class="hover:text-brand-700">idamsamx@outlook.com</a>
+        <a href="tel:+528124443723" class="hover:text-brand-700">+52 812 444 3723</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/528124443723" class="fixed bottom-5 right-5 inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shadow-lg" aria-label="WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
